@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-trying',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-trying.component.scss']
 })
 export class CardTryingComponent implements OnInit {
+  @Input() title:string;
+  @Input() content:string;
+  @Input() textBtn:string;
+  @Input() linkBtn:string;
+
   public isShowComponent = true;
   constructor() { }
 

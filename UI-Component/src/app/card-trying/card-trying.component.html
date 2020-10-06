@@ -1,15 +1,14 @@
 <div class="card" *ngIf="isShowComponent">
     <i class='bx bx-x card__close' (click) = "closeComponent()"></i>
     <h3 class="card__title">
-        Upgrade for more permissions control
+        {{title}}
     </h3>
     <p class="card__content">
-        Decide who can send invitations, edit team settings, and more with Business Class.
+        {{content}}
     </p>
     <div class="card__button">
-        <a href="#" >
-            Try for 14 days
+        <a href={{linkBtn}}>
+            {{textBtn}}
         </a>
     </div>
-    
 </div>
