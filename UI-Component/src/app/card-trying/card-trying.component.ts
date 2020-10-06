@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-trying.component.scss']
 })
 export class CardTryingComponent implements OnInit {
-
+  public isShowComponent = true;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  closeComponent(){
+    this.isShowComponent = false;
+  }
 }
