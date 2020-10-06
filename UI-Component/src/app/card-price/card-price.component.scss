@@ -1,0 +1,35 @@
+.card{
+    width: 266px;
+    padding: 42px 36px 35px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    &__status{
+        display: block;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    &__content{
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    &__price{
+        margin-bottom: 30px;
+        .big-text{
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+    &__button{
+        width: 100%;
+        background-color: #582CC7;
+        padding: 15px 0px;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        display: block;
+        color: #ECEAFA;
+    }
+}

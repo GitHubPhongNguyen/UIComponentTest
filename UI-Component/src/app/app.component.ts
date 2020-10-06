@@ -13,4 +13,8 @@ export class AppComponent {
     link: "#",
     textBtn: "Try for 14 days"
   }
+  cardPrice = {
+    price: 100,
+    description: "Basics for teams and developer"
+  }
 }
