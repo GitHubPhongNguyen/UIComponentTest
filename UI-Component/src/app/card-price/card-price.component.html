@@ -1,0 +1,21 @@
+<div class="card">
+    <span class="card__status" *ngIf="item.price <= 0; else buyStatus">
+        Free
+    </span>
+    <ng-template #buyStatus>
+        <span class="card__status">
+            Buy
+        </span>
+    </ng-template>
+    
+    <p class="card__content">
+        {{item.description}}
+    </p>
+    <div class="card__price">
+        <span class="big-text">${{item.price}}</span>/month
+    </div>
+    
+    <a href="#" class="card__button">
+        Sign up
+    </a>
+</div>
