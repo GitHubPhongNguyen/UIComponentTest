@@ -1,0 +1,14 @@
+<div class="card" *ngIf="isShowComponent">
+    <i class='bx bx-x card__close' (click) = "closeComponent()"></i>
+    <h3 class="card__title">
+        {{title}}
+    </h3>
+    <p class="card__content">
+        {{content}}
+    </p>
+    <div class="card__button">
+        <a href={{linkBtn}}>
+            {{textBtn}}
+        </a>
+    </div>
+</div>
